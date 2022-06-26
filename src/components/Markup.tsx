@@ -1,9 +1,8 @@
-import React, { useContext } from "react";
-import { UserContext } from "./StateContext";
+import { usePlanet } from "./StateContext";
 
 export const Markup = () => {
-  const data = useContext(UserContext);
+  const data2 = usePlanet();
 
-  const name: string = data?.name;
+  const name = data2.name;
   return <div>{name}</div>;
 };
